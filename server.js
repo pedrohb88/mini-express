@@ -17,7 +17,7 @@ const appendSmileToBody = function(req, res, next) {
 
 app.post('/todo', upperCaseBody, appendSmileToBody, (req, res) => {
     res.send(req.body);
-    res.end('\nGET /todo');
+    res.end('\nPOST /todo');
 });
 
 const PORT = process.env.PORT || 5000;
